@@ -4,9 +4,6 @@
       <v-row dense class="d-flex justify-space-between align-center">
         <div class="d-flex align-center">
           <v-card-title>積算温度</v-card-title>
-          <v-btn icon color="grey darken-1" @click="toggleHelp">
-            <v-icon size="22">help_outline</v-icon>
-          </v-btn>
         </div>
         <span class="body mr-3">積算開始から{{ days }}日</span>
       </v-row>
@@ -16,15 +13,7 @@
           <div class="gage_base">
             <div class="gage1" />
           </div>
-          <!-- <div style="width: 30%;" class="mx-3">
-            <v-progress-linear
-              value="100"
-              height="2"
-              color="var(--current_color)"
-              class="mt-5"
-              loader-height="1"
-            />
-          </div> -->
+
           <div class="flex-colmn ml-10">
             <span class="body">
               <slot name="detail">現 在の積算温度</slot>
@@ -39,12 +28,6 @@
               <span class="display-1 font-weight-bold">℃</span>
             </div>
           </div>
-        </v-row>
-      </transition>
-
-      <transition name="fade">
-        <v-row dense class="pl-3 d-flex align-center" v-if="!this.toggle">
-          <p>積算温度とは...</p>
         </v-row>
       </transition>
     </v-container>
