@@ -1,0 +1,102 @@
+{
+  "current": [
+    {
+      "name": "気温(℃)",
+      "comment": "temperature",
+      "record": 14,
+      "type": "",
+      "icon": "mdi-home-thermometer",
+      "id": "temp",
+      "timeRatio": 0
+    },
+    {
+      "name": "水温(℃)",
+      "comment": "water temperature",
+      "record": 17,
+      "type": "",
+      "icon": "mdi-thermometer",
+      "id": "water-temp",
+      "timeRatio": 0
+    },
+    {
+      "name": "風速(km/h)",
+      "comment": "wind speed",
+      "record": 2,
+      "type": "",
+      "icon": "mdi-weather-windy",
+      "id": "wind"
+    },
+    {
+      "name": "波高(m)",
+      "comment": "wave height",
+      "record": 0.5,
+      "type": "",
+      "icon": "mdi-waves",
+      "id": "wave",
+      "timeRatio": 0
+    },
+    {
+      "name": "栄養塩(mg/L)",
+      "comment": "nutrition",
+      "record": 0.09,
+      "type": "",
+      "icon": "mdi-sprout",
+      "id": "nut",
+      "timeRatio": 0
+    }
+  ],
+
+  "records": [],
+
+  "headers": [
+    {"text": "日時", "value": "date"},
+    {"text": "気温", "value": "temprature"},
+    {"text": "水温", "value": "waterTemprature"},
+    {"text": "波高", "value": "waterHeight"},
+    {"text": "栄養塩量", "value": "natrient"},
+    {"text": "蓄積温度", "value": "accTemprature"}
+  ],
+
+  "delta_sample": [
+    {
+      "name": "temperture",
+      "displayName": "気温",
+      "type": "℃",
+      "max": 0,
+      "min": 30.5,
+      "avg": 0
+    },
+    {
+      "name": "water-temp",
+      "displayName": "水温",
+      "type": "℃",
+      "max": 10,
+      "min": 1.2,
+      "avg": 3.4
+    },
+    {
+      "name": "wind-speed",
+      "displayName": "風速",
+      "type": "m",
+      "max": 3.5,
+      "min": 0.75,
+      "avg": 1.2
+    },
+    {
+      "name": "wave-height",
+      "displayName": "波高",
+      "type": "m",
+      "max": 2.0,
+      "min": 0.5,
+      "avg": 1.2
+    },
+    {
+      "name": "nutrition",
+      "displayName": "栄養塩",
+      "type": "mg/L",
+      "max": 0,
+      "min": 0,
+      "avg": 0
+    }
+  ]
+}
